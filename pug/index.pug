@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="style.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    body 
+    .container
+        header 
+            h1 Find Your Course
+        main 
+            .programms   
+
+                .programms_block
+                    h2 
+                        img(src="./images/hat--green.png" alt="img")
+                        p careers
+                    .text 
+                        | Business & Management #[img(src="./images/arrow.png")]
+                    .text 
+                        | Computing & IT #[img(src="./images/arrow.png")]
+                    .text
+                        | Fashion & Media #[img(src="./images/arrow.png")]
+                    .text    
+                        | Finance & Accounting #[img(src="./images/arrow.png")]
+                    .text
+                        | Law & Criminology #[img(src="./images/arrow.png")]
+                    .text
+                        | Marketing & Communications #[img(src="./images/arrow.png")]
+                    .text
+                        | Psychology & Social Sciences #[img(src="./images/arrow.png")]
+                    button Show all programmes
+
+                mixin courses(logo, title, course, graduation, schedule)
+                    .schedules_block
+                        .logo
+                            img(src=logo, alt="img")
+                        h3= title 
+                        p= course
+                        img(src="./images/hat.png" alt="img")
+                        p= graduation
+                        img(src="./images/schedule.png" alt="img")
+                        p= schedule
+                        div
+                            button MORE INFO
+            .schedules
+                +courses("./images/logo_embratur.png", "Business & Management", "Master of Business Administration (CMI)", "Postgraduate", "Every 12 weeks")
+                +courses("#", "Business & Management", "Master of Business Administration (CMI)", "Postgraduate", "Every 12 weeks")
+                +courses("./images/logo_danisco.png", "Business & Management", "Master of Business Administration (CMI)", "Postgraduate", "Every 12 weeks")
+                +courses("#", "Business & Management", "Master of Business Administration (CMI)", "Postgraduate", "Every 12 weeks")
+                +courses("./images/logo_buffet.png", "Business & Management", "Master of Business Administration (CMI)", "Postgraduate", "Every 12 weeks")
+                +courses("./images/logo_barco.png", "Business & Management", "Master of Business Administration (CMI)", "Postgraduate", "Every 12 weeks")
+        footer 
+            h4 More programmes
+            img(src="./images/circle.png" alt="img")

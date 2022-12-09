@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 1088px;
+  width: 1440px;
+  background: rgba(247, 247, 247, 0.8901960784);
+  padding: 0 120px 0 120px;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 46px;
+  color: #3E3E3E;
+  padding: 60px 0 30px 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 20px;
+}
+main h2 {
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #259609;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(119, 117, 117, 0.4862745098);
+  margin-bottom: 10px;
+}
+main h2 p {
+  padding-left: 15px;
+}
+main .programms_block {
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  padding-bottom: 20px;
+  background: #FFFFFF;
+}
+main .programms_block img {
+  display: flex;
+  margin-left: 20px;
+}
+main .programms_block .text {
+  font-family: "Helvetica";
+  font-weight: 700;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+}
+main .programms_block button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #259609;
+  background-color: white;
+  opacity: 0.35;
+  border: 1px solid #259609;
+  border-radius: 3px;
+}
+main .schedules {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+main .schedules .schedules_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  border-top: 6px solid #259609;
+  background: #FFFFFF;
+}
+main .schedules .schedules_block .logo {
+  position: relative;
+  left: 45%;
+}
+main .schedules .schedules_block button {
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #259609;
+  border-radius: 3px;
+  border: 1px solid #259609;
+}/*# sourceMappingURL=style.css.map */
